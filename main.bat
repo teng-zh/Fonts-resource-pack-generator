@@ -30,5 +30,5 @@ if %errorlevel% equ 0 (
     echo Python installed successfully. Starting to execute the script...
 )
 
-rem Execute run_hidden.vbs
-cscript //nologo run_hidden.vbs    
+rem Execute the Python script
+python .\Main.py    
