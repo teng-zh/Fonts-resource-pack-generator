@@ -1,5 +1,6 @@
 @echo off
 chcp 65001
+echo 请不要关闭此控制台窗口，脚本正在运行...
 rem Check if Python is installed
 python --version >nul 2>&1
 if %errorlevel% equ 0 (
@@ -32,4 +33,4 @@ if %errorlevel% equ 0 (
 rem Execute the script
 python .\Main.py
 
-exit   
+pause    
