@@ -1,4 +1,13 @@
-#Build File
-*main.bat
-# Executables
-*.py
+# Build File
+main.bat
+
+# Python bytecode and cache directories
+__pycache__/
+*.pyc
+
+# Python virtual environments
+venv/
+.env
+
+# Log files
+*.log
