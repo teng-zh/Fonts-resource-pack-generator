@@ -54,7 +54,7 @@ This tool supports Minecraft versions ranging from 1.13 to 1.21. It's important 
 
 ### Manual Installation
 1. **Install Python 3.9.13**:
-    - Visit the official Python website (https://www.python.org/downloads/release/python - 3913/) and download the Python 3.9.13 installer for your operating system.
+    - Visit the official Python website (https://www.python.org/downloads/release/python-3913/) and download the Python 3.9.13 installer for your operating system.
     - Run the installer and make sure to check the "Add Python to PATH" option during the installation process.
 2. **Install Dependencies**:
     - Open the command prompt or terminal and navigate to the project directory.
@@ -84,11 +84,11 @@ We welcome contributions from the community! If you'd like to contribute to this
 We will review your pull request as soon as possible and provide feedback. If there are any required modifications, please adjust your code accordingly and resubmit.
 
 ## License
-This project is licensed under the [[MIT License](LICENSE](https://github.com/teng-zh/Fonts-resource-pack-generator/blob/main/License.txt)). You are free to use, modify, and distribute the project code, but you must retain the original author's copyright notice and license information in related documents or products. Please refer to the LICENSE file for specific terms.
+This project is licensed under the [[MIT License](https://github.com/teng-zh/Fonts-resource-pack-generator/blob/main/License.txt). You are free to use, modify, and distribute the project code, but you must retain the original author's copyright notice and license information in related documents or products. Please refer to the LICENSE file for specific terms.
 
 ## Contact
 If you encounter any problems during use, have suggestions, or ideas, you can contact us in the following ways:
-- **GitHub Issues**: Submit detailed problem descriptions or suggestions on the [Issues page](https://github.com/teng - zh/Fonts - resource - pack - generator/issues) of the project repository. We will check and respond promptly.
+- **GitHub Issues**: Submit detailed problem descriptions or suggestions on the [Issues page](https://github.com/teng-zh/Fonts-resource-pack-generator/issues) of the project repository. We will check and respond promptly.
 - **Email**: You can also send an email to [lask27wq@hotmail.com] to communicate with us.
 
 Thank you for using our tool! We hope it will bring more fun and creativity to your Minecraft journey.
@@ -173,7 +173,7 @@ Thank you for using our tool! We hope it will bring more fun and creativity to y
 ### 3. 生成资源包时提示错误怎么办？
 - 仔细查看错误提示信息，通常会包含导致错误的原因，如未选择字体文件、输出文件夹路径无效等。根据提示信息补充或修正相应的设置。
 - 若错误提示与文件权限相关，请确保你对输出文件夹和相关文件拥有读写权限。
-- 如果问题仍然存在，请在 GitHub 仓库的 [Issues](https://github.com/teng - zh/Fonts - resource - pack - generator/issues) 页面提交详细的错误描述和操作步骤，以便开发者及时排查和解决。
+- 如果问题仍然存在，请在 GitHub 仓库的 [Issues](https://github.com/teng-zh/Fonts-resource-pack-generator/issues) 页面提交详细的错误描述和操作步骤，以便开发者及时排查和解决。
 
 ## 贡献指南
 我们非常欢迎广大开发者和 Minecraft 爱好者参与到本项目的开发和完善中来！如果你想为项目贡献代码或提出建议，可参考以下步骤：
@@ -187,7 +187,7 @@ Thank you for using our tool! We hope it will bring more fun and creativity to y
 我们会尽快对提交的 Pull Request 进行审核和反馈。如果有任何需要修改的地方，请根据审核意见进行调整，并再次提交。
 
 ## 许可证
-本项目基于 [MIT 许可证](LICENSE) 发布，这意味着你可以自由地使用、修改和分发本项目代码，但需在相关文档或产品中保留原作者的版权声明和许可证信息。具体使用条款请参考 LICENSE 文件内容。
+本项目基于 [MIT 许可证]([LICENSE](https://github.com/teng-zh/Fonts-resource-pack-generator/blob/main/Liscence.txt)) 发布，这意味着你可以自由地使用、修改和分发本项目代码，但需在相关文档或产品中保留原作者的版权声明和许可证信息。具体使用条款请参考 LICENSE 文件内容。
 
 ## 联系与反馈
 如果你在使用过程中遇到问题、有任何建议或想法，欢迎通过以下方式与我们联系：
