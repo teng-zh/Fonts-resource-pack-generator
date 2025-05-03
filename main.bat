@@ -32,4 +32,4 @@ if %errorlevel% equ 0 (
 rem Execute the script
 python .\Main.py
 
-pause    
+exit   
