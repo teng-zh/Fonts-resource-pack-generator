@@ -1,6 +1,6 @@
 @echo off
 chcp 65001
-echo 请不要关闭此控制台窗口，脚本正在运行...
+echo Please do not close this console window. The script is running...
 rem Check if Python is installed
 python --version >nul 2>&1
 if %errorlevel% equ 0 (
