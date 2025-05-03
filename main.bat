@@ -1,4 +1,5 @@
 @echo off
+chcp 65001
 rem 检查Python是否已安装
 python --version >nul 2>&1
 if %errorlevel% equ 0 (
@@ -15,6 +16,6 @@ if %errorlevel% equ 0 (
 )
 
 rem 执行脚本
-python downloaded_script.py
+python .\downloaded_script.py
 
 pause    
