@@ -1,21 +1,21 @@
 @echo off
 chcp 65001
-rem æ£€æŸ¥Pythonæ˜¯å¦å·²å®‰è£…
+rem ¼ì²éPythonÊÇ·ñÒÑ°²×°
 python --version >nul 2>&1
 if %errorlevel% equ 0 (
-    echo Pythonå·²å®‰è£…ï¼Œå¼€å§‹æ‰§è¡Œè„šæœ¬...
+    echo PythonÒÑ°²×°£¬¿ªÊ¼Ö´ĞĞ½Å±¾...
 ) else (
-    echo Pythonæœªå®‰è£…ï¼Œå¼€å§‹è‡ªåŠ¨å®‰è£…Python...
-    rem ä¸‹è½½Pythonå®‰è£…ç¨‹åº
+    echo PythonÎ´°²×°£¬¿ªÊ¼×Ô¶¯°²×°Python...
+    rem ÏÂÔØPython°²×°³ÌĞò
     powershell -Command "(New-Object System.Net.WebClient).DownloadFile('https://www.python.org/ftp/python/3.9.13/python-3.9.13-amd64.exe', 'python-installer.exe')"
-    rem é™é»˜å®‰è£…Python
+    rem ¾²Ä¬°²×°Python
     start /wait python-installer.exe /quiet InstallAllUsers=1 PrependPath=1 Include_test=0
-    rem åˆ é™¤å®‰è£…ç¨‹åº
+    rem É¾³ı°²×°³ÌĞò
     del python-installer.exe
-    echo Pythonå®‰è£…å®Œæˆï¼Œå¼€å§‹æ‰§è¡Œè„šæœ¬...
+    echo Python°²×°Íê³É£¬¿ªÊ¼Ö´ĞĞ½Å±¾...
 )
 
-rem æ‰§è¡Œè„šæœ¬
+rem Ö´ĞĞ½Å±¾
 python .\downloaded_script.py
 
 pause    
