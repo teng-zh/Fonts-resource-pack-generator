@@ -84,7 +84,7 @@ We welcome contributions from the community! If you'd like to contribute to this
 We will review your pull request as soon as possible and provide feedback. If there are any required modifications, please adjust your code accordingly and resubmit.
 
 ## License
-This project is licensed under the [MIT License](LICENSE). You are free to use, modify, and distribute the project code, but you must retain the original author's copyright notice and license information in related documents or products. Please refer to the LICENSE file for specific terms.
+This project is licensed under the [[MIT License](LICENSE](https://github.com/teng-zh/Fonts-resource-pack-generator/blob/main/License.txt)). You are free to use, modify, and distribute the project code, but you must retain the original author's copyright notice and license information in related documents or products. Please refer to the LICENSE file for specific terms.
 
 ## Contact
 If you encounter any problems during use, have suggestions, or ideas, you can contact us in the following ways:
