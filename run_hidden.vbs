@@ -1,2 +1,5 @@
 Set objShell = CreateObject("WScript.Shell")
-objShell.Run "cmd.exe /c ""path\to\your\main.bat""", 0, false    
+currentPath = CreateObject("Scripting.FileSystemObject").GetParentFolderName(WScript.ScriptFullName)
+batPath = currentPath & "\main.bat"
+
+objShell.Run "cmd.exe /c """ & batPath & """", 1, false    
