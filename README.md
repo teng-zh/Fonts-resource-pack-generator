@@ -1,4 +1,4 @@
-# Minecraft-generate-fonts-
+# Minecraft-generate-fonts-resource-pack
 Generate fonts and use it in minecraft!
 ## Features
  * Generate in 1ms and it's support Ture type font and Open type font.
