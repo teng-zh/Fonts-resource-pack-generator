@@ -35,7 +35,11 @@ LANGUAGES = {
         "language_english": "英文",
         "version_label": "选择游戏版本:",
         "output_format_folder": "文件夹",
-        "output_format_zip": "ZIP"
+        "output_format_zip": "ZIP",
+        "left_shift_label": "左侧偏移:",
+        "bottom_shift_label": "下侧偏移:",
+        "font_size_label": "字体大小:",
+        "resolution_label": "分辨率:"
     },
     "英文": {
         "title": "Font Resource Pack Creator",
@@ -63,7 +67,11 @@ LANGUAGES = {
         "language_english": "English",
         "version_label": "Select Game Version:",
         "output_format_folder": "Folder",
-        "output_format_zip": "ZIP"
+        "output_format_zip": "ZIP",
+        "left_shift_label": "Left Shift:",
+        "bottom_shift_label": "Bottom Shift:",
+        "font_size_label": "Font Size:",
+        "resolution_label": "Resolution:"
     }
 }
 
@@ -158,6 +166,10 @@ def create_pack():
     zip_name = zip_name_entry.get()
     output_format = output_format_var.get()
     selected_version = version_var.get()
+    left_shift = int(left_shift_entry.get())
+    bottom_shift = int(bottom_shift_entry.get())
+    font_size = int(font_size_entry.get())
+    oversample = int(resolution_entry.get())
 
     if not font_path:
         messagebox.showerror(LANGUAGES[current_language]["error_font"], LANGUAGES[current_language]["error_font"])
@@ -203,20 +215,20 @@ def create_pack():
 
     # 创建 default.json 文件
     default_json_path = os.path.join(font_dir, "default.json")
-    default_json_content = """{
+    default_json_content = f"""{{
         "providers": [
-            {
+            {{
                 "type": "ttf",
-                "file": "minecraft:custom%s",
+                "file": "minecraft:custom{font_extension}",
                 "shift": [
-                    0,
-                    0
+                    {left_shift},
+                    {bottom_shift}
                 ],
-                "size": 11,
-                "oversample": 4
-            }
+                "size": {font_size},
+                "oversample": {oversample}
+            }}
         ]
-    }""" % font_extension
+    }}"""
     with open(default_json_path, "w", encoding="utf - 8") as f:
         f.write(default_json_content)
     print(f"创建 default.json 文件: {default_json_path}")
@@ -304,6 +316,10 @@ def change_language(*args):
     create_button.config(text=LANGUAGES[current_language]["create_button"])
     language_label.config(text=LANGUAGES[current_language]["language"])
     version_label.config(text=LANGUAGES[current_language]["version_label"])
+    left_shift_label.config(text=LANGUAGES[current_language]["left_shift_label"])
+    bottom_shift_label.config(text=LANGUAGES[current_language]["bottom_shift_label"])
+    font_size_label.config(text=LANGUAGES[current_language]["font_size_label"])
+    resolution_label.config(text=LANGUAGES[current_language]["resolution_label"])
 
 
 # 创建主窗口
@@ -377,13 +393,41 @@ language_var.trace("w", change_language)
 language_menu = tk.OptionMenu(root, language_var, "中文", "英文")
 language_menu.grid(row=7, column=1, padx=10, pady=5)
 
+# 左侧偏移输入
+left_shift_label = tk.Label(root, text=LANGUAGES[current_language]["left_shift_label"])
+left_shift_label.grid(row=8, column=0, padx=10, pady=5)
+left_shift_entry = tk.Entry(root, width=20)
+left_shift_entry.insert(0, "0")
+left_shift_entry.grid(row=8, column=1, padx=10, pady=5)
+
+# 下侧偏移输入
+bottom_shift_label = tk.Label(root, text=LANGUAGES[current_language]["bottom_shift_label"])
+bottom_shift_label.grid(row=9, column=0, padx=10, pady=5)
+bottom_shift_entry = tk.Entry(root, width=20)
+bottom_shift_entry.insert(0, "0")
+bottom_shift_entry.grid(row=9, column=1, padx=10, pady=5)
+
+# 字体大小输入
+font_size_label = tk.Label(root, text=LANGUAGES[current_language]["font_size_label"])
+font_size_label.grid(row=10, column=0, padx=10, pady=5)
+font_size_entry = tk.Entry(root, width=20)
+font_size_entry.insert(0, "11")
+font_size_entry.grid(row=10, column=1, padx=10, pady=5)
+
+# 分辨率输入
+resolution_label = tk.Label(root, text=LANGUAGES[current_language]["resolution_label"])
+resolution_label.grid(row=11, column=0, padx=10, pady=5)
+resolution_entry = tk.Entry(root, width=20)
+resolution_entry.insert(0, "4")
+resolution_entry.grid(row=11, column=1, padx=10, pady=5)
+
 # 创建按钮
 create_button = tk.Button(root, text=LANGUAGES[current_language]["create_button"], command=create_pack)
-create_button.grid(row=8, column=1, padx=10, pady=20)
+create_button.grid(row=12, column=1, padx=10, pady=20)
 
 # 进度条
 progress_bar = Progressbar(root, orient=tk.HORIZONTAL, length=300, mode='determinate')
-progress_bar.grid(row=9, column=0, columnspan=3, padx=10, pady=10)
+progress_bar.grid(row=13, column=0, columnspan=3, padx=10, pady=10)
 
 # 运行主循环
 root.mainloop()
