@@ -1,40 +1,43 @@
-# Python-related files
+# Python bytecode and virtual environments
 __pycache__/
-*.pyc
+*.py[cod]
 *.pyo
 *.pyd
-*.egg-info
+*.egg-info/
 .venv/
 env/
 venv/
 ENV/
 
-# Build and output files
-/dist/
-/build/
-/*.zip
-/*.rar
-/*.tar.gz
-/output/
+# Distribution/build/output files
+dist/
+build/
+*.zip
+*.rar
+*.tar.gz
+output/
 
-# Temporary files and logs
+# Logs and temp files
 *.log
 *.tmp
 *.temp
 *.bak
 
-# Configuration files and sensitive information
+# Secrets and config
 config.ini
 secrets.json
 .env
 
-# Personal IDE/editor configurations
+# IDE/editor configs
 .idea/
 .vscode/
 *.iml
 *.ipr
 *.iws
 
-# Auto-generated batch scripts
+# Batch file artifacts
 main.bat
-    
+
+# System files
+.DS_Store
+Thumbs.db
