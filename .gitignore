@@ -1,13 +1,40 @@
-# Build File
-main.bat
-
-# Python bytecode and cache directories
+# Python-related files
 __pycache__/
 *.pyc
-
-# Python virtual environments
+*.pyo
+*.pyd
+*.egg-info
+.venv/
+env/
 venv/
+ENV/
+
+# Build and output files
+/dist/
+/build/
+/*.zip
+/*.rar
+/*.tar.gz
+/output/
+
+# Temporary files and logs
+*.log
+*.tmp
+*.temp
+*.bak
+
+# Configuration files and sensitive information
+config.ini
+secrets.json
 .env
 
-# Log files
-*.log
+# Personal IDE/editor configurations
+.idea/
+.vscode/
+*.iml
+*.ipr
+*.iws
+
+# Auto-generated batch scripts
+main.bat
+    
