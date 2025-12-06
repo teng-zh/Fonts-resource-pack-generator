@@ -1,0 +1,43 @@
+# Python bytecode and virtual environments
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.egg-info/
+.venv/
+env/
+venv/
+ENV/
+
+# Distribution/build/output files
+dist/
+build/
+*.zip
+*.rar
+*.tar.gz
+output/
+
+# Logs and temp files
+*.log
+*.tmp
+*.temp
+*.bak
+
+# Secrets and config
+config.ini
+secrets.json
+.env
+
+# IDE/editor configs
+.idea/
+.vscode/
+*.iml
+*.ipr
+*.iws
+
+# Batch file artifacts
+main.bat
+
+# System files
+.DS_Store
+Thumbs.db
